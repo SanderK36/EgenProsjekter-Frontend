@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(196, 207, 4, 1) 0%, rgba(0, 0, 0, 1) 97%);
+    color: #fff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    position: relative;
+}
+
+.container-fluid {
+    background: linear-gradient(90deg, rgba(196, 207, 4, 1) 0%, rgba(0, 0, 0, 1) 97%);
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    gap: 10px;
+}
+
+.infoListText {
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out;
+    color: #fff; /* White for contrast on gradient */
+    font-size: 25px;
+}
+
+.infoListText:hover {
+    font-size: 30px;
+}
+
+#headerLogo {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#headerLogo:hover {
+    transform: scale(1.2);
+}
+
+.albumContent, .historyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.albumContent h1, .historyContent h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.albumContent p, .historyContent p {
+    font-size: 18px;
+    max-width: 800px;
+    text-align: center;
+}
+
+#albumGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.albumImg {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.albumImg:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1a1a1a; /* Dark gray for contrast */
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modal-content p {
+    margin: 10px 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.close-button:hover {
+    color: #ff0000;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    width: 4px;
+    background: #fff; /* White timeline bar for contrast */
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-year {
+    width: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.timeline-year::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 46px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-details {
+    flex: 1;
+    background: #1a1a1a; /* Dark gray for contrast against gradient */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-details:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.timeline-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    color: #fff;
+}
+
+.timeline-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
