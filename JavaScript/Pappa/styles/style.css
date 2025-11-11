@@ -1,0 +1,49 @@
+.NavLogo {
+    max-height: 160px; /* Reduced logo height to fit a thinner navbar */
+    width: auto;
+}
+
+.navbar {
+    padding-top: 0.25rem; /* Reduced top padding */
+    padding-bottom: 0.25rem; /* Reduced bottom padding */
+}
+
+.navbar-nav .nav-link {
+    padding-top: 0.5rem; /* Adjust link padding for a thinner look */
+    padding-bottom: 0.5rem;
+    font-size: 23px;
+}
+
+.MainImage {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+
+.welcome-section {
+    background-color: #f8f9fa;
+}
+
+.services-section .card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.services-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.about-section img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: rgb(255, 89, 89);
+    border-color: rgb(255, 89, 89);
+}

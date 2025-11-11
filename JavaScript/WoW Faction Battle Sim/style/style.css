@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#GameTitle {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    color: #444;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #444;
+    background-color: red;
+}
